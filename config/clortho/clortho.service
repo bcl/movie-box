@@ -1,0 +1,11 @@
+[Unit]
+Description=Clortho key server
+After=network-online.target
+
+[Service]
+WorkingDirectory=/root/clortho/
+User=root
+ExecStart=/clortho-venv/bin/python3 /root/clortho/src/clortho.py --port 9002
+
+[Install]
+WantedBy=multi-user.target
