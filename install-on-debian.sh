@@ -39,8 +39,8 @@ systemctl restart dnsmasq
 systemctl enable lighttpd
 systemctl restart lighttpd
 
-grep -q movie-box /etc/fstab
-if [ $? -gt 0 ]; then
+r=$(grep -q movie-box /etc/fstab || echo "FAIL")
+if [ "$r" == "FAIL" ]; then
     echo "LABEL=movie-box /mnt/movie-box auto defaults,noatime,auto,nofail 0 2" >> /etc/fstab
     systemctl daemon-reload
 fi
