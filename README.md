@@ -12,7 +12,7 @@ drive directly to the Roku. No network, no switches, no USB hubs needed.
 
  * Raspberry Pi or other Debian based system. I used a Model B.
  * Power supply for the Pi. Use the largest you have around, I used an Apple charger.
- * Roku player. I used is a model ???
+ * Roku player. I used is a model N1000
  * USB Keyboard
  * USB drive. I used a small 16GB Sandisk drive.
  * Ethernet cable.
