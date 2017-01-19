@@ -70,3 +70,10 @@ ROKU_DEV_USER=rokudev
 ROKU_DEV_PASSWORD=password
 cd ./HMS/HMS/
 make install
+
+echo "=====>"
+echo "Movie Box installation complete. You may now connect the TV to the Roku player."
+echo "Press ENTER to reboot the system."
+read
+reboot
+
